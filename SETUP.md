@@ -16,3 +16,13 @@ bundle exec jekyll serve
 ```
 will produce a working site even if you have all of that set incorrectly!
 but the github deploy will not work. and it will often not generate any error messages.
+
+## images
+
+images are also weird. put images under /assets/images in the repo. reference them as
+```
+![](/docs/assets/images/image_file_name)
+```
+the name should include .png or .jpg or whatever.
+
+note this will not work on the local test. it's broken locally but works on the public site.
