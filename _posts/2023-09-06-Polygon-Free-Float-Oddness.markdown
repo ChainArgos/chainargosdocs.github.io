@@ -5,6 +5,8 @@ The published vesting schedule is section 3.4 [here](https://research.binance.co
 
 Here is a look showing flows out of the treasury (i.e. the real circulating supply) [here](https://chainargosbi.cloud.looker.com/looks/238).
 
+![](/docs/assets/images/polygon_realized_vesting.png)
+
 These are not the same:
 1. The number of releases is different
 2. The releases are not as smooth across time.
