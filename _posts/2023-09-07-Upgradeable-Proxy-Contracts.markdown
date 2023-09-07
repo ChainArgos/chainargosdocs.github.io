@@ -1,12 +1,12 @@
 ---
 layout: post
 title:  "Upgradeable Proxy Contracts"
-date:   2023-09-07 15:00:00 +0800
+date:   2023-09-07 14:30:00 +0800
 categories: proxy, smart-contract
 ---
 
 This post works through the technical details of "upgradeable proxy contacts" on the
-Ethereum Virtrual Machine and how this concept applies to two controversial public examples:
+Ethereum Virtual Machine and how this concept applies to two controversial public examples:
 Coinbase's base l2 blockchain and Tornado Cash.
 
 # Introduction To Proxies
