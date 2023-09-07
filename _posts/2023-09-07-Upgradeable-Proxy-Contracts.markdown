@@ -55,11 +55,11 @@ If everyone using the system works through ```indirectCall()``` the protocol is,
 upgradeable.
 
 ## Renouncing Ownership
-Sometimes a project wants to crystalize a given implementation and give up ownership.
+Sometimes a project wants to crystallize a given implementation and give up ownership.
 They do not want to be in charge anymore.
 Maybe the project is stable. Maybe no bugs have been found for X months.
 Maybe they just do not want the legal responsibilities that come with ownership anymore.
-Whatever.
+Whatever reason.
 
 They can:
 ```solidity
@@ -87,10 +87,10 @@ function upgradeTo(address newImplementation) external ifAdmin {
 }
 ```
 You do not need to be a solidity expert, or even have programming experience, to figure this out.
-All you need is to understand teh vocabulary and basic concepts.
+All you need is to understand the vocabulary and basic concepts.
 
 So that contract was upgradeable. It was not immutable.
-And per etherscan it processed 962 transcactions over a period of about two months.
+And per etherscan it processed 962 transactions over a period of about two months.
 You can see that [here](https://etherscan.io/txs?a=0xb541fc07bc7619fd4062a54d96268525cbc6ffef&p=1).
 
 # Base
