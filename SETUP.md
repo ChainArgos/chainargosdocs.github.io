@@ -29,3 +29,4 @@ note this will not work on the local test. it's broken locally but works on the 
 
 ## notes
 1. if a post has a timestamp in the future it will not get published
+2. the single # does not generate large headlines. start with ## and go from there

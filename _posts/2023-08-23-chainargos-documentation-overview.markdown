@@ -7,12 +7,12 @@ categories: introduction
 
 This is the ChainArgos technical documentation repo.
 
-# The System
+## The System
 
 [Getting data into pandas]({{site.baseurl}}{% post_url 2023-08-23-example-looker-to-pandas-pipeline %}) -
 A simple walkthrough connecting dashboard queries up with a pandas DataFrame.
 
-# Technical Work
+## Technical Work
 
 [Upgradeable Proxy Contacts and Mutability]({{site.baseurl}}{% post_url 2023-09-07-Upgradeable-Proxy-Contracts %}) -
 How can you make upgradeable contracts on a platform that does not natively support them.

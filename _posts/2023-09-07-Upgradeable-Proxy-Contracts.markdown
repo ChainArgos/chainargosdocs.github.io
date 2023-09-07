@@ -9,7 +9,7 @@ This post works through the technical details of "upgradeable proxy contacts" on
 Ethereum Virtual Machine and how this concept applies to two controversial public examples:
 Coinbase's base l2 blockchain and Tornado Cash.
 
-# Introduction To Proxies
+## Introduction To Proxies
 
 The OpenZeppelin documentation provides an excellent detailed overview [here](https://blog.openzeppelin.com/proxy-patterns).
 To quote them:
@@ -24,7 +24,7 @@ Because:
 
 this is a common problem.
 
-## Standards
+### Standards
 
 There are a few relevant EIP "standard" solutions to these problems.
 [EIP-1822](https://eips.ethereum.org/EIPS/eip-1822) is the base setup to look at.
@@ -54,7 +54,7 @@ contract Proxy {
 If everyone using the system works through ```indirectCall()``` the protocol is, in practice,
 upgradeable.
 
-## Renouncing Ownership
+### Renouncing Ownership
 Sometimes a project wants to crystallize a given implementation and give up ownership.
 They do not want to be in charge anymore.
 Maybe the project is stable. Maybe no bugs have been found for X months.
@@ -69,7 +69,7 @@ setImplementation(0x0000000000000000000000000000000000000000);
 Now the null address - an address nobody has the private keys for - is the owner.
 Functionally this means it is no longer possible to upgrade the contract.
 
-# Tornado Cash
+## Tornado Cash
 
 [Here](https://etherscan.io/address/0xb541fc07bc7619fd4062a54d96268525cbc6ffef#code) is a Tornado Cash mixer contract.
 You can read the code there on etherscan.
@@ -93,11 +93,11 @@ So that contract was upgradeable. It was not immutable.
 And per etherscan it processed 962 transactions over a period of about two months.
 You can see that [here](https://etherscan.io/txs?a=0xb541fc07bc7619fd4062a54d96268525cbc6ffef&p=1).
 
-# Base
+## Base
 
 Coinbase's base is a more complex example of the same sort of behavior.
 
-## Standard Contracts
+### Standard Contracts
 base is built on optimism. we can see in those docs [here](https://community.optimism.io/docs/protocol/protocol-2.0/#)
 that a basic optimism setup involves 4 addresses on the l1 chain:
 1. L2OutputOracle
@@ -120,7 +120,7 @@ The [portal contract](https://etherscan.io/address/0x49048044d57e1c92a77f79988d2
 And using a similar technique we can find [the oracle](https://etherscan.io/address/0x56315b90c40730925ec5485cf004d835058518A0).
 Both of these, again, are upgradeable proxies.
 
-## Other Components
+### Other Components
 
 base is built on optimism.
 But it goes well beyond being just a deployment of that stack.
