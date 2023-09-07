@@ -1,4 +1,9 @@
-# Polygon circulating supply
+---
+layout: post
+title:  "Polygon Circulating Supply"
+date:   2023-09-06 15:00:00 +0800
+categories: polygon, l2
+---
 
 The published vesting schedule is section 3.4 [here](https://research.binance.com/en/projects/matic-network).
 ![](/docs/assets/images/polygon_vesting_schedule.png)
