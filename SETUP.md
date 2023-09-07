@@ -26,3 +26,6 @@ images are also weird. put images under /assets/images in the repo. reference th
 the name should include .png or .jpg or whatever.
 
 note this will not work on the local test. it's broken locally but works on the public site.
+
+## notes
+1. if a post has a timestamp in the future it will not get published
