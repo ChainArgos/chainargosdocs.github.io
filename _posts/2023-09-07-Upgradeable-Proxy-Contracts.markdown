@@ -70,6 +70,12 @@ setImplementation(0x0000000000000000000000000000000000000000);
 Now the null address - an address nobody has the private keys for - is the owner.
 Functionally this means it is no longer possible to upgrade the contract.
 
+If you look at [this current Tornado Cash contract](https://etherscan.io/address/0xA160cdAB225685dA1d56aa342Ad8841c3b53f291#readContract)
+there is a field ```operator```. It is currently set to null.
+Ownership of this contract was renounced in May 2020 in line with this [Tornado Cash blog post](https://tornado-cash.medium.com/tornado-cash-is-finally-trustless-a6e119c1d1c2).
+You can see the call on [this transaction](https://etherscan.io/tx/0xa5adf0aa5aecac6dbe3d6a31ea91589bb7c54b10050afec839dad0957ebceb6f)
+and check the state change [here](https://etherscan.io/tx/0xa5adf0aa5aecac6dbe3d6a31ea91589bb7c54b10050afec839dad0957ebceb6f#statechange).
+
 ## Tornado Cash <img src="https://miro.medium.com/v2/resize:fill:36:36/2*CE0d_LiVIbqYH7PzIpRToQ.png" height=24>
 
 [Here](https://etherscan.io/address/0xb541fc07bc7619fd4062a54d96268525cbc6ffef#code) is a Tornado Cash mixer contract.
