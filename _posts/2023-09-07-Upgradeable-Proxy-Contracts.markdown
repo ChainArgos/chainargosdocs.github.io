@@ -69,7 +69,7 @@ setImplementation(0x0000000000000000000000000000000000000000);
 Now the null address - an address nobody has the private keys for - is the owner.
 Functionally this means it is no longer possible to upgrade the contract.
 
-## Tornado Cash
+## Tornado Cash <img src="https://miro.medium.com/v2/resize:fill:36:36/2*CE0d_LiVIbqYH7PzIpRToQ.png" height=24>
 
 [Here](https://etherscan.io/address/0xb541fc07bc7619fd4062a54d96268525cbc6ffef#code) is a Tornado Cash mixer contract.
 You can read the code there on etherscan.
@@ -93,13 +93,13 @@ So that contract was upgradeable. It was not immutable.
 And per etherscan it processed 962 transactions over a period of about two months.
 You can see that [here](https://etherscan.io/txs?a=0xb541fc07bc7619fd4062a54d96268525cbc6ffef&p=1).
 
-## Base
+## Base <img src="https://images.mirror-media.xyz/publication-images/cgqxxPdUFBDjgKna_dDir.png?height=1200&width=1200" height=24>
 
 Coinbase's base is a more complex example of the same sort of behavior.
 
 ### Standard Contracts
-base is built on optimism. we can see in those docs [here](https://community.optimism.io/docs/protocol/protocol-2.0/#)
-that a basic optimism setup involves 4 addresses on the l1 chain:
+base is built on <img src="https://assets-global.website-files.com/611dbb3c82ba72fbc285d4e2/611fd32ef63b79b5f8568d58_OPTIMISM-logo.svg" height=10>. We can see in those docs [here](https://community.optimism.io/docs/protocol/protocol-2.0/#)
+that a basic optimism setup involves 4 addresses on the L1 chain:
 1. L2OutputOracle
 2. OptimismPortal
 3. L1CrossDomainMessenger
