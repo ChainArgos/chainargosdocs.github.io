@@ -7,7 +7,7 @@ categories: proxy, smart-contract
 
 This post works through the technical details of "upgradeable proxy contacts" on the
 Ethereum Virtual Machine and how this concept applies to two controversial public examples:
-Coinbase's base l2 blockchain and Tornado Cash.
+Coinbase's base L2 blockchain and Tornado Cash.
 
 ## Introduction To Proxies
 
