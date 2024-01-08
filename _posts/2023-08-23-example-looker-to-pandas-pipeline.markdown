@@ -1,28 +1,25 @@
 ---
 layout: post
-title:  "Example Looker To pandas Pipeline"
+title:  "Extracting to pandas Pipeline"
 date:   2023-08-23 16:00:00 +0800
 categories: looker pandas
 ---
 
-This brief example shows you how to pull ChainArgos data out of Looker queries and into a pandas
-DataFrame for analysis.
-If you can work with pandas you surely have enough technical knowledge to get this working.
+This brief example will demonstrate how easy it is to extract ChainArgos data out of DashArgos queries into a pandas DataFrame for analysis.
 
-## Looker
-First set up your queries [here](https://chainargosbi.cloud.looker.com). Do not worry if the results are
-truncated in the UI -- that won't be a limitation here.
+## Start with your DashArgos Query
+First, set up your DashArgos query. DashArgos automatically displays 500 rows of data, up to a maximum of 5,000 rows and if your data exceeds 5,000 rows, it will be truncated in the DashArgos user interface because of browser limitations. 
+
+However, users with API access can extract all the data relevant to their queries, and user interface limitations are not as relevant.
 
 ## Google Sheets
-Now we are going to pull those query results into Google Sheets.
+Having set up your DashArgos query, now we are going to pull those query results into Google Sheets.
+
 Google gives simple instructions [here](https://cloud.google.com/looker/docs/connected-sheets).
 
-Set up whatever pivot tables you want from your looker queries.
-[Here](https://docs.google.com/spreadsheets/d/10_Urfe_U-LuvydpxWozPtkEdh7tUNFFtMlmYitNapV0/) is an example
-sheet.
+Set up whatever pivot tables you want from your looker queries.[Here](https://docs.google.com/spreadsheets/d/10_Urfe_U-LuvydpxWozPtkEdh7tUNFFtMlmYitNapV0/) is an example sheet.
 
-Note the document ID -- the long random-looking string of characters near the end of the URL -- and the
-names of the sheets you want to extract.
+Note the Google Sheets document ID -- the long random-looking string of characters near the end of the URL -- and the names of the sheets you want to extract.
 
 ## Pandas
 
@@ -63,7 +60,8 @@ merged_df = pd.merge(from_df, to_df, left_on='From Address', right_on='To Addres
 
 ## Periodic Updates
 
-You can configure the Google doc to automatically update the query results by following Google's
-simple instructions [here](https://cloud.google.com/looker/docs/connected-sheets#scheduling_regular_refresh_times).
+You can configure the Google doc to automatically update the query results by following Google's simple instructions [here](https://cloud.google.com/looker/docs/connected-sheets#scheduling_regular_refresh_times).
 
-That's it. It'd be no-code except you *wanted* to use pandas.
+That's it. 
+
+It'd be no-code except you *wanted* to use pandas.
